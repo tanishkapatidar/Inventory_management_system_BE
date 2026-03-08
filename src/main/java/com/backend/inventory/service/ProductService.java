@@ -33,7 +33,7 @@ public class ProductService {
                 .description(productRequestDTO.getDescription())
                 .build();
 
-        Product savedProduct = productRepository.save(product);
+        Product savedProduct = productRepository.saveAndFlush(product);
         return  mapToProductResponseDTO(savedProduct);
     }
 
