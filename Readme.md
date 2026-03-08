@@ -3,7 +3,7 @@
 A robust, RESTful API built with Spring Boot to manage product inventory. This service handles data persistence, business logic, validation, and error handling for the Inventory Management System.
 
 ## Tech Stack & Dependencies
-* **Java 17** (Amazon Corretto)
+* **Java 21** (Amazon Corretto)
 * **Spring Boot 3.x**
     * Spring Web (REST Controllers)
     * Spring Data JPA (Hibernate/ORM)
@@ -15,7 +15,7 @@ A robust, RESTful API built with Spring Boot to manage product inventory. This s
 Before running the application, you must configure your database connection. Open `src/main/resources/application.properties` and update the following environment variables with your PostgreSQL credentials:
 
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/inventory_db
+spring.datasource.url=jdbc:postgresql://localhost:5432/[YOUR_DB_NAME]
 spring.datasource.username=your_postgres_username
 spring.datasource.password=your_postgres_password
 spring.jpa.hibernate.ddl-auto=update
