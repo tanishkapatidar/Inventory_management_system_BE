@@ -70,3 +70,6 @@ modified_at (Timestamp) - Automatically updated via @UpdateTimestamp.
 
 If errors encountered in IntelliJ use the run command below:
 ./mvnw clean spring-boot:run
+
+## Assumptions
+while creating a product try to keep the price less than 8 digits.
